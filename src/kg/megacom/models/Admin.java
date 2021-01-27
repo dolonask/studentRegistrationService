@@ -33,6 +33,8 @@ public class Admin extends Person {
             this.password = password;
     }
 
+
+
     @Override
     public void work() {
 

@@ -49,6 +49,8 @@ public class Course {
         this.teacher = teacher;
     }
 
+
+
     @Override
     public String toString(){
         /*
@@ -68,4 +70,8 @@ public class Course {
          */
         return super.toString();
     }
+    /*public void info(){
+        System.out.println("course name - " + getName());
+        System.out.println("teacher name - " + getTeacher().getName());
+    }*/
 }
