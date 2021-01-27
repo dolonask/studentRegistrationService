@@ -14,6 +14,7 @@ public class Admin extends Person {
 
 
     public String getLogin() {
+
         return login;
     }
 
@@ -23,6 +24,7 @@ public class Admin extends Person {
     }
 
     public String getPassword() {
+
         return password;
     }
 
@@ -33,6 +35,7 @@ public class Admin extends Person {
 
     @Override
     public void work() {
+
         System.out.println("managing");
     }
 }

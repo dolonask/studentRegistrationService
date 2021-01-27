@@ -11,6 +11,7 @@ public class Student extends Person {
     }
 
     public int getAge() {
+
         return age;
     }
 
@@ -21,6 +22,7 @@ public class Student extends Person {
 
     @Override
     public void work() {
+
         System.out.println("study");
     }
 }

@@ -13,14 +13,17 @@ public class Course {
     }
 
     public String getName() {
+
         return name;
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public Student[] getStudents() {
+
         return students;
     }
 
@@ -37,10 +40,12 @@ public class Course {
     }
 
     public Teacher getTeacher() {
+
         return teacher;
     }
 
     public void setTeacher(Teacher teacher) {
+
         this.teacher = teacher;
     }
 

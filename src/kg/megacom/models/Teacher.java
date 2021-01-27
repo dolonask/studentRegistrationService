@@ -10,6 +10,7 @@ public class Teacher extends Person{
     }
 
     public double getSalary() {
+
         return salary;
     }
 
@@ -20,6 +21,7 @@ public class Teacher extends Person{
 
     @Override
     public void work() {
+
         System.out.println("teach");
     }
 }
