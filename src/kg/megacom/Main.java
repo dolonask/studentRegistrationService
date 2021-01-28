@@ -41,6 +41,29 @@ public class Main {
 
         // Создание судента:
 
+        System.out.print("Enter student name: ");
+        String studentName = scan.next();
+
+        System.out.print("Enter student age: ");
+        int studentAge = scan.nextInt();
+
+        Student student = new Student(studentName, studentAge);
+        course.addStudent(student);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

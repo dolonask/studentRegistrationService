@@ -28,6 +28,19 @@ public class Course {
     }
 
     public boolean addStudent(Student student){
+
+        for (int i = 0; i < students.length; i++)
+        {
+            if(students[i] == null)
+            {
+                students[i] = student;
+            }else {
+                return false;
+            }
+        }
+
+
+
        /*
             1. Есть ли места?
             2. Проверить на уникальность
@@ -53,6 +66,7 @@ public class Course {
 
     @Override
     public String toString(){
+
         /*
             Название курса: Java
             Преподатель: Долон
@@ -68,10 +82,7 @@ public class Course {
 
 
          */
-        return super.toString();
+
     }
-    /*public void info(){
-        System.out.println("course name - " + getName());
-        System.out.println("teacher name - " + getTeacher().getName());
-    }*/
+
 }
