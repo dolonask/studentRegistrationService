@@ -29,13 +29,38 @@ public class Course {
             1. Есть ли места?
             2. Проверить на уникальность
             3. Добавляем
-
-
         */
 
-       return true;
-    }
+        for (int i = 0; i < students.length; i++) {
+                if (students[i]!=null){
+                    if (students[i].getName().equals(student.getName()) & students[i].getAge()==student.getAge()){
 
+                    System.out.println("Its a same student!");
+                    return false;
+
+                    }
+                }
+            for (int k = 0; k < students.length; k++) {
+
+                if (students[k]==null){
+
+                    students[k] = student;
+                    return true;
+                }
+            }
+        }
+
+        System.out.println("Course is full!");
+
+        return false;
+
+    }
+    public void info() {
+        for (int k = 0; k < students.length; k++) {
+
+            System.out.println(students[k].getName());
+        }
+    }
     public Teacher getTeacher() {
         return teacher;
     }
