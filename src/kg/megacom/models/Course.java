@@ -2,6 +2,8 @@ package kg.megacom.models;
 
 public class Course {
 
+    private int studentNumber = 0;
+    private int maxStudentNumber;
     private String name;
     private Student[] students;
     private Teacher teacher;
@@ -10,6 +12,7 @@ public class Course {
         this.name = name;
         this.students = new Student[maxStudentCount];
         this.teacher = teacher;
+        this.maxStudentNumber = maxStudentCount;
     }
 
     public String getName() {
@@ -29,17 +32,20 @@ public class Course {
 
     public boolean addStudent(Student student){
 
+        if(studentNumber > maxStudentNumber){
+            return false;
+        }
+        for (int i = 0; i < studentNumber; i++)
+        {
+            if(students[i].equals(student))
+            {
+                return false;
+            }
+        }
+        students[studentNumber] = student;
+        studentNumber++;
 
-
-       /*
-            1. Есть ли места?
-            2. Проверить на уникальность
-            3. Добавляем
-
-
-        */
-
-       return true;
+        return true;
     }
 
     public Teacher getTeacher() {
@@ -52,39 +58,17 @@ public class Course {
         this.teacher = teacher;
     }
 
-
-
-    /* @Override
-   public String toString(){
-
-        /*return "Course name - " + getName() +
+    @Override
+    public String toString(){
+        String str;
+        System.out.println("\n");
+        str = "Course name - " + getName() +
                 "\n"+
-                "Teacher name - " + getTeacher().getName();*/
-
-
-        /*
-            Название курса: Java
-            Преподатель: Долон
-            Студенты:
-                1. Жылдызбек
-                2.
-                3.
-                4.
-                5.
-                6.
-                7.
-                8.
-
- }
-         */
-
-   public void info()
-   {
-       System.out.println("Course name - " + getName());
-       System.out.println("Teacher name - " + getTeacher().getName());
-       for(int i = 0; i < students.length; i++){
-           System.out.println("Студенты: \n " + students[i].getName());
-       }
-   }
-
+                "Teacher name - " + getTeacher().getName() + "\n" + "Students: "+ "\n";
+        for(int i = 0; i < studentNumber; i++)
+        {
+            str += students[i].getName() + "\n";
+        }
+        return str;
+    }
 }

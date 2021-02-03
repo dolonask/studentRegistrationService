@@ -41,42 +41,19 @@ public class Main {
 
         // Создание судента:
 
-        System.out.print("Enter student name: ");
-        String studentName = scan.next();
 
-        System.out.print("Enter student age: ");
-        int studentAge = scan.nextInt();
+        for (int i = 0; i < course.getStudents().length; i++)
+        {
+            System.out.print("Enter student name: ");
+            String studentName = scan.next();
 
-        Student student = new Student(studentName, studentAge);
-        course.addStudent(student);
-        course.info();
+            System.out.print("Enter student age: ");
+            int studentAge = scan.nextInt();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            Student student = new Student(studentName, studentAge);
+            course.addStudent(student);
+        }
+        System.out.println(course.toString());
 
 
     }
