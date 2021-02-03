@@ -29,16 +29,6 @@ public class Course {
 
     public boolean addStudent(Student student){
 
-        for (int i = 0; i < students.length; i++)
-        {
-            if(students[i] == null)
-            {
-                students[i] = student;
-            }else {
-                return false;
-            }
-        }
-
 
 
        /*
@@ -64,8 +54,13 @@ public class Course {
 
 
 
-    @Override
-    public String toString(){
+    /* @Override
+   public String toString(){
+
+        /*return "Course name - " + getName() +
+                "\n"+
+                "Teacher name - " + getTeacher().getName();*/
+
 
         /*
             Название курса: Java
@@ -80,9 +75,16 @@ public class Course {
                 7.
                 8.
 
-
+ }
          */
 
-    }
+   public void info()
+   {
+       System.out.println("Course name - " + getName());
+       System.out.println("Teacher name - " + getTeacher().getName());
+       for(int i = 0; i < students.length; i++){
+           System.out.println("Студенты: \n " + students[i].getName());
+       }
+   }
 
 }

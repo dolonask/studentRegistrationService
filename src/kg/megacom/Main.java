@@ -49,6 +49,8 @@ public class Main {
 
         Student student = new Student(studentName, studentAge);
         course.addStudent(student);
+        course.info();
+
 
 
 
