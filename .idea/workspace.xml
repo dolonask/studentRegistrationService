@@ -21,10 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8c600f48-929e-4ac9-a49d-d71b3d15ead8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/studentRegService/kg/megacom/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/studentRegService/kg/megacom/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/studentRegService/kg/megacom/models/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/studentRegService/kg/megacom/models/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kg/megacom/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kg/megacom/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kg/megacom/models/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kg/megacom/models/Course.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
