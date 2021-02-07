@@ -37,8 +37,10 @@ public class Course {
         }
         for (int i = 0; i < studentNumber; i++)
         {
-            if(students[i].equals(student))
+            if(students[i].getName().equals(student.getName()) & students[i].getAge() == student.getAge())
             {
+                System.out.println("Student: " + student.getName() +"-"+ student.getAge()+" did not add! " +
+                        "He is already on the course");
                 return false;
             }
         }
