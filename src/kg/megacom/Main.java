@@ -54,7 +54,5 @@ public class Main {
             course.addStudent(student);
         }
         System.out.println(course.toString());
-
-
     }
 }
